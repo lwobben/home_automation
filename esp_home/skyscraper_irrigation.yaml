@@ -1,5 +1,5 @@
 esphome:
-  name: irrigation
+  name: skyscraper_irrigation
 
 esp8266:
   board: nodemcuv2
@@ -27,7 +27,7 @@ switch:
   - platform: gpio
     pin: D7
     id: relay
-    name: "Valve relay"
+    name: "Water valve relay"
     on_turn_on:
     - delay: 120s
     - switch.turn_off: relay
